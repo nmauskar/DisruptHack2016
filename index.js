@@ -31,22 +31,6 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.get('/login', function(req, res){
-  res.render('login.ejs');
-});
-
-app.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect('/');
-});
-
-app.get('/logout', function(req, res){
-  req.logout();
-  res.redirect('/');
-});
-
-app.get('/register', function(req, res) {
-	res.render('register.ejs')
-})
 
 app.listen(3000, function() {
 	console.log('Listening on port 3000.');
