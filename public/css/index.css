@@ -1,3 +1,4 @@
+
 .index-bg {
 	background-image: url('https://ucarecdn.com/94684b24-c827-4219-b31b-57c2508bd577/Untitled3.png');
 	/*height: 100vh;*/
@@ -11,4 +12,17 @@
 
 #app {
 	background-color: tan;
+
+.container-fluid {
+	background-color: #212121;
+}
+
+.welcomeBox {
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 2em;
+}
+
+p {
+	color: white;
 }

@@ -21,6 +21,8 @@ app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 
 app.use('/', require('./lib/routes/index'));
+app.use('/api/recipe', require('./lib/routes/recipe'));
+app.use('/api/ingredient', require('./lib/routes/ingredient'));
 
 // model for users //
 
@@ -31,7 +33,6 @@ passport.use(new localStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
 	console.log('Listening on port 3000.');
 });
