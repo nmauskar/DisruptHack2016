@@ -1,0 +1,26 @@
+{
+  "name": "disrupthack2016",
+  "version": "1.0.0",
+  "description": "fridge+alexa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmauskar/DisruptHack2016.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nmauskar/DisruptHack2016/issues"
+  },
+  "homepage": "https://github.com/nmauskar/DisruptHack2016#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
