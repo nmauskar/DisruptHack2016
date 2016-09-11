@@ -1,3 +1,13 @@
-#app {
-	background-color: tan;
+.container-fluid {
+	background-color: #212121;
+}
+
+.welcomeBox {
+	background-color: lightgrey;
+	border-radius: 8px;
+	padding: 2em;
+}
+
+p {
+	color: white;
 }
