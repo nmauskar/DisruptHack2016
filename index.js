@@ -11,17 +11,16 @@ var app = express(),
 app.set('views', __dirname + '/public/views');
 app.engine('html', require('ejs').renderFile);
 
-
-app.use('/js', express.static(__dirname + '/public/js'));
-app.use('/css', express.static(__dirname + '/public/css'));
-
-app.use('/', require('./lib/routes/index'));
-
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+app.use('/js', express.static(__dirname + '/public/js'));
+app.use('/css', express.static(__dirname + '/public/css'));
+
+app.use('/', require('./lib/routes/index'));
 
 // model for users //
 
