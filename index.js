@@ -21,6 +21,8 @@ app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/css', express.static(__dirname + '/public/css'));
 
 app.use('/', require('./lib/routes/index'));
+app.use('/api/recipe', require('./lib/routes/recipe'));
+app.use('/api/ingredient', require('./lib/routes/ingredient'));
 
 // model for users //
 
