@@ -7,7 +7,7 @@ var app = express(),
 		hash = require('bcrypt-nodejs'),
 		passport = require('passport'),
 		router = express.Router(),
-		routes = require('./controllers/login.js'),
+		routes = require('./lib/routes/login.js'),
 		localStrategy = require('passport-local').Strategy;
 
 app.set('views', __dirname + '/public/views');
@@ -27,6 +27,10 @@ app.use(require('express-session')({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+// model for users //
+
+var User = require('./lib/models/User.js');
 
 // passport config //
 passport.use(new localStrategy(User.authenticate()));
