@@ -23,6 +23,7 @@ app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/', require('./lib/routes/index'));
 app.use('/api/recipe', require('./lib/routes/recipe'));
 app.use('/api/ingredient', require('./lib/routes/ingredient'));
+app.use('/fridge', require('./lib/routes/alexa'));
 
 // model for users //
 
@@ -48,7 +49,7 @@ app.get('/logout', function(req, res){
 
 app.get('/register', function(req, res) {
 	res.render('register.ejs')
-})
+});
 
 app.listen(process.env.PORT || 3000, function() {
 	console.log('Listening on port 3000.');
