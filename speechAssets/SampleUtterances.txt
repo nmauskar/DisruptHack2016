@@ -1,0 +1,7 @@
+GetMealsIntent what should I make
+GoneBadIntent what's gone bad
+AlmostBadIntent what's about to go bad
+PurchaseIntent what do I need to buy
+TellAmountIntent how much {IngredientName} do I have
+MakeIntent I'm going to make {RecipeName}
+TossIntent I'm going to throw away {IngredientName}
