@@ -10,15 +10,18 @@
 	margin-bottom: 0px;
 }
 
-#app {
-	background-color: tan;
-
 .container-fluid {
 	background-color: #212121;
 }
 
+
+#app {
+	background-color: tan;
+}
+
 .welcomeBox {
-	background-color: lightgrey;
+	background: linear-gradient(bottom, rgba(75,81,93,.3), rgba(75,81,93,.3));
+	background: -webkit-linear-gradient(bottom, rgba(75,81,93,.3), rgba(75,81,93,.3));
 	border-radius: 8px;
 	padding: 2em;
 }
