@@ -3,7 +3,7 @@ var ReactDOM = require('react-dom');
 
 ReactDOM.render(
 	(
-		<div>Hi</div>
+		<div>Hi There</div>
 	),
 	document.getElementById('app')
 );
